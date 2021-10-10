@@ -1,0 +1,16 @@
+import 'dart:io';
+
+maim(){
+
+  //print("Digite seu peso:");
+  var textoPeso = stdin.readLineSync()!;
+  // print("Digite sua altura:");
+  var textoAltura = stdin.readLineSync()!;
+  var peso = int.parse(textoPeso);
+  var altura = double.parse(textoAltura);
+
+  var calc = peso / (altura*altura);
+
+  print(calc);
+
+}
